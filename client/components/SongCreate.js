@@ -5,7 +5,7 @@ import gql from "graphql-tag";
 
 import query from "../queries/fetchSongs";
 
-export class SongCreate extends Component {
+class SongCreate extends Component {
     constructor(props) {
         super(props);
 
