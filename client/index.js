@@ -12,6 +12,8 @@ import SongCreate from "./components/SongCreate";
 
 const client = new ApolloClient({});
 
+import "./style/style.css";
+
 const Root = () => {
     return (
         <ApolloProvider client={client}>
