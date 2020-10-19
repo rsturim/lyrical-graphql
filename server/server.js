@@ -9,9 +9,6 @@ const app = express();
 
 const { MONGO_URI } = require("./secrets");
 
-// Replace with your mongoLab URI
-// const MONGO_URI =
-//     "mongodb+srv://dbUser:MOCzgdUDQJc37ItB@lyricalapp.6gpn0.mongodb.net/lyricalapp?retryWrites=true&w=majority";
 
 if (!MONGO_URI) {
     throw new Error("You must provide a MongoLab URI");
