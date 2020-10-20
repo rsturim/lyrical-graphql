@@ -13,7 +13,6 @@ class LyricCreate extends Component {
     }
 
     handleOnSubmit(event) {
-        console.log("goo!");
         event.preventDefault();
 
         this.props.mutate({
@@ -47,6 +46,7 @@ const mutation = gql`
         addLyricToSong(content: $content, songId: $songId) {
             id
             lyrics {
+                id
                 content
             }
         }
